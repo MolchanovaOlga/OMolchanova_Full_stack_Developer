@@ -1,13 +1,56 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+  <div class="logo">
+    <a href="./index.html" aria-label="Link to home page">
+      <svg class="logo-icon">
+        <use href="./img/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
+  </div>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <ul class="header-contacts">
+    <li class="header-contacts-item">
+      <a
+        class="header-phone"
+        href="tel:+38(096)89-05-772"
+        target="_blank"
+        aria-label="Link to telephone"
+        noopener
+        noreferrer
+      >
+        <svg class="header-phone-icon" width="24" height="24">
+          <use href="./img/sprite.svg#icon-telephone"></use>
+        </svg>
+        +38(096)89-05-772
+      </a>
+    </li>
+    <li class="header-contacts-item">
+      <a
+        class="header-mail"
+        href="mailto:designer.molchanova@gmail.com"
+        target="_blank"
+        aria-label="Link to email"
+        noopener
+        noreferrer
+      >
+        <svg class="header-mail-icon" width="24" height="24">
+          <use href="./img/sprite.svg#icon-letter"></use>
+        </svg>
+        designer.molchanova@gmail.com
+      </a>
+    </li>
+  </ul>
+  <!-- <select name="lengs">
+    <option value="UK">UK</option>
+    <option value="EN">EN</option>
+  </select> -->
+  <button
+    class="menu-btn"
+    type="button"
+    aria-label="Button to open menu"
+    data-modal-open
+  >
+    <svg class="menu-btn-icon" width="58" height="30">
+      <use href="./img/sprite.svg#icon-burger-menu"></use>
+    </svg>
+  </button>
 </header>

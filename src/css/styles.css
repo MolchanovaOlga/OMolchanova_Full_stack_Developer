@@ -5,21 +5,31 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('./base.css');
+@import url('./menu.css');
 @import url('./header.css');
+@import url('./first-page.css');
+@import url('./portfolio.css');
+@import url('./socials.css');
+@import url('./about-me.css');
+@import url('./footer.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shojumaru&display=swap');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  --main-white: #f8f8f8;
+  --main-green: #81ab3c;
+  --main-black: #1a1a1a;
+  --hover-gray: #9e9d9d;
+  --selected-grey: #888888;
+  --lines-grey-color: rgba(136, 136, 136, 0.7);
+  --yellow-color: #fac036;
+
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  color: var(--main-white);
+  background-color: var(--main-black);
 }

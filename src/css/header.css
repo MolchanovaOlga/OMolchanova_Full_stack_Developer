@@ -1,21 +1,142 @@
 .header {
-  padding: 20px 0;
-}
-
-.nav-list {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: space-between;
+  max-width: 375px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  border-bottom: 1px solid var(--lines-grey-color);
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .header {
+    min-width: 768px;
+    max-width: 1200px;
+    padding: 48px 50px;
+  }
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+@media screen and (min-width: 1250px) {
+  .header {
+    max-width: 1200px;
+    padding: 16px 50px;
+  }
+}
+
+/*       --------------------------  headers logo  ------------------------------*/
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo:hover,
+.logo:focus {
+  transform: scale(1.03);
+  transition: transform 250ms linear;
+}
+
+.logo-icon {
+  width: 70px;
+  height: 47px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-icon {
+    width: 90px;
+    height: 63px;
+  }
+}
+
+/*       --------------------------  headers contacts  ------------------------------*/
+
+.header-contacts {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .header-contacts {
+    display: flex;
+    gap: 48px;
+  }
+}
+
+.header-phone {
+  display: flex;
+}
+
+.header-phone:hover,
+.header-phone:focus {
+  color: var(--selected-grey);
+  transform: scale(1.01);
+  transition: transform 250ms linear;
+  transition: color 250ms linear;
+}
+
+.header-phone-icon {
+  fill: var(--main-white);
+  margin-right: 8px;
+}
+
+.header-phone:hover .header-phone-icon,
+.header-phone:focus .header-phone-icon {
+  fill: var(--selected-grey);
+  transition: fill 250ms linear;
+}
+
+.header-mail {
+  display: flex;
+}
+
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--selected-grey);
+  transform: scale(1.01);
+  transition: transform 250ms linear;
+  transition: color 250ms linear;
+}
+
+.header-mail-icon {
+  fill: var(--main-white);
+  margin-right: 8px;
+}
+
+.header-mail:hover .header-mail-icon,
+.header-mail:focus .header-mail-icon {
+  fill: var(--selected-grey);
+  transition: fill 250ms linear;
+}
+
+/*       --------------------------  select lenguages ------------------------------*/
+
+.lengs {
+  border: none;
+  color: transparent;
+}
+
+/*       --------------------------  burger-menu button  ------------------------------*/
+
+.menu-btn {
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+.menu-btn-icon {
+  stroke: var(--main-white);
+}
+
+.menu-btn-icon:hover,
+.menu-btn-icon:focus {
+  stroke: var(--hover-gray);
+  transition: stroke 250ms linear;
+  transform: scale(1.1);
+  transition: transform 250ms linear;
 }

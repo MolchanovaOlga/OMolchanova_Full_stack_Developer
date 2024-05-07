@@ -1,0 +1,47 @@
+/*       --------------------------  github-icon ------------------------------*/
+
+.github-icon {
+    fill: var(--hover-gray)
+}
+
+.github-icon:hover,
+.github-icon:focus {
+    fill: var(--main-white);
+    transition: fill 250ms linear;
+}
+
+/*       --------------------------  linkedin-icon ------------------------------*/
+
+.linkedin-icon {
+    fill: var(--hover-gray);
+}
+
+.linkedin-icon:hover,
+.linkedin-icon:focus {
+    fill:var(--main-white);
+    transition: fill 250ms linear;
+}
+
+/*       --------------------------  telegram-icon ------------------------------*/
+
+.telegram-icon {
+    fill: var(--hover-gray);
+}
+
+.telegram-icon:hover,
+.telegram-icon:focus {
+    fill: var(--main-white);
+    transition: fill 250ms linear;
+}
+
+/*       --------------------------  instagram-icon ------------------------------*/
+
+.instagram-icon {
+    fill: var(--hover-gray);
+}
+
+.instagram-icon:hover,
+.instagram-icon:focus {
+    fill: var(--main-white);
+    transition: fill 250ms linear;
+}

@@ -1,0 +1,417 @@
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  min-width: 320px;
+  min-height: 1000px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .portfolio-section {
+    min-width: 768px;
+    max-width: 605px;
+    padding: 48px 50px;
+    min-height: 1400px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .portfolio-section {
+    max-width: 1020px;
+    padding: 72px 50px;
+  }
+}
+
+.portfolio-title {
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-title {
+    font-size: 48px;
+    margin-bottom: 48px;
+  }
+}
+
+/*       --------------------------  form-radio-buttons ------------------------------*/
+
+.portfolio-radio-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .portfolio-radio-form {
+    width: 505px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .portfolio-radio-form {
+    width: 749px;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+}
+
+.portfolio-radio-form-label {
+  display: flex;
+  align-items: center;
+  color: var(--selected-grey);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .portfolio-radio-form-label {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .portfolio-radio-form-label {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.portfolio-radio-form-label:hover,
+.portfolio-radio-form-label:focus {
+  color: var(--main-green);
+  transition: color 250ms linear;
+}
+
+.portfolio-radio-form-label:hover input,
+.portfolio-radio-form-label:focus input {
+  border: 1px solid var(--main-green);
+  transition: border 250ms linear;
+}
+
+.selected-radio-label {
+  color: var(--main-green);
+  font-weight: 600;
+  cursor: auto;
+}
+
+.selected-radio-label:hover,
+.selected-radio-label:focus {
+  color: var(--main-green);
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--hover-gray);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  input {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  input {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.selected-radio-label:hover input,
+.selected-radio-label:focus input {
+  border: 8px solid var(--main-green);
+}
+
+input:checked {
+  border: 8px solid var(--main-green);
+  cursor: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  input:checked {
+    border: 9px solid var(--main-green);
+  }
+
+  .selected-radio-label:hover input,
+  .selected-radio-label:focus input {
+    border: 9px solid var(--main-green);
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  input:checked {
+    border: 10px solid var(--main-green);
+  }
+
+  .selected-radio-label:hover input,
+  .selected-radio-label:focus input {
+    border: 10px solid var(--main-green);
+  }
+}
+
+/*       --------------------------  projects ------------------------------*/
+
+.portfolio-projects-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-projects-list {
+    gap: 36px;
+  }
+}
+
+.portfolio-projects-item {
+  border: 1px solid var(--lines-grey-color);
+  border-radius: 10px;
+  background-color: rgba(57, 71, 61, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  width: 343px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .portfolio-projects-item {
+    padding: 48px;
+    border-radius: 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .portfolio-projects-item {
+    border-radius: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 36px;
+    width: 100%;
+  }
+}
+
+/*       --------------------------  left-block ------------------------------*/
+
+.portfolio-projects-left-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 1250px) {
+  .portfolio-projects-left-block {
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 345px;
+  }
+}
+
+.portfolio-projects-image-container {
+  overflow: hidden;
+  border-radius: 5px;
+  width: 295px;
+  height: 169px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-projects-image-container {
+    border-radius: 10px;
+    width: 345px;
+    height: 197px;
+  }
+}
+
+.portfolio-projects-image {
+  width: 100%;
+  height: 100%;
+}
+
+.image-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-blur:hover,
+.image-blur:focus {
+  backdrop-filter: blur(2.5px);
+  background: rgba(57, 71, 61, 0.5);
+  color: white;
+  transition: background 250ms linear;
+  transition: backdrop-filter 250ms linear;
+}
+
+.image-blur-text {
+  font-weight: 200;
+}
+
+.projects-left-text-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 24px 0;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+  .projects-left-text-container {
+    flex-direction: row;
+    align-items: center;
+    margin: 24px 0;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .projects-left-text-container {
+    flex-direction: row;
+    align-items: center;
+    margin: 24px 0 0 0;
+  }
+}
+
+.portfolio-projects-github-link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1250px) {
+  .portfolio-projects-github-link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.portfolio-projects-github-link:hover,
+.portfolio-projects-github-link:focus {
+  color: var(--selected-grey);
+  transition: color 250ms linear;
+}
+
+.portfolio-projects-github-icon {
+  fill: var(--main-white);
+  margin-right: 10px;
+}
+
+.portfolio-projects-github-link:hover .portfolio-projects-github-icon,
+.portfolio-projects-github-link:focus .portfolio-projects-github-icon {
+  fill: var(--selected-grey);
+  transition: fill 250ms linear;
+}
+
+.portfolio-projects-filter-paragraf {
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 100;
+}
+
+/*       --------------------------  right-block ------------------------------*/
+
+.portfolio-projects-right-block {
+  width: 100%;
+  border-top: 1px solid var(--lines-grey-color);
+  padding-top: 24px;
+}
+
+@media screen and (min-width: 1250px) {
+  .portfolio-projects-right-block {
+    width: 380px;
+    border: none;
+    padding-top: 0;
+  }
+}
+
+.portfolio-project-title {
+  color: var(--main-green);
+  font-weight: 700;
+}
+
+.portfolio-project-technologies {
+  font-style: italic;
+  margin: 18px 0;
+}
+
+.portfolio-project-description-container {
+  height: 95px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1250px) {
+  .portfolio-project-description-container {
+    min-height: 145px;
+  }
+}
+
+.portfolio-project-description {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-project-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* -------------------------  scroll  ------------------------- */
+
+.scroll-on {
+  overflow-y: scroll;
+}
+
+#scrollTry::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px trasparent;
+  border-radius: 12px;
+  background-color: rgba(57, 71, 61);
+}
+
+#scrollTry::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgba(57, 71, 61);
+}
+
+#scrollTry::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  -webkit-box-shadow: inset 0 0 6px rgb(129, 171, 60, 0.1);
+  background: rgb(129, 171, 60, 0.3);
+}
